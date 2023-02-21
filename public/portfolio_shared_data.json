@@ -1,17 +1,17 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Mark Obonan",
+      "titles": [ "Front-end Developer", "Problem Solver", "Long-life Learner", "Fitness Enthusiast" ],
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/CSMark04",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/mark-obonan-7a4989254/",
+          "class": "fab fa-linkedin"
         }
       ],
       "image": "myProfile.jpg"
@@ -28,11 +28,7 @@
           "class": "devicon-css3-plain",
           "level": "95"
         },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
+        
         {
           "name": "TypeScript",
           "class": "devicon-typescript-plain",
@@ -44,24 +40,44 @@
           "level": "70"
         },
         {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
           "name": "Bootstrap",
           "class": "devicon-bootstrap-plain",
           "level": "85"
         },
         {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
           "name": "MySql",
           "class": "devicon-mysql-plain",
           "level": "60"
+        },       
+        {
+          "name": "NodeJs",
+          "class": "devicon-nodejs-plain-wordmark",
+          "level": "85"
+        },       
+        {
+          "name": "React",
+          "class": "devicon-react-original",
+          "level": "85"
+        }, 
+        {
+          "name": "GraphQL",
+          "class": "devicon-graphql-plain",
+          "level": "85"
+        },
+        {
+          "name": "MongoDB",
+          "class": "devicon-mongodb-plain",
+          "level": "85"
+        },
+        {
+          "name": "PostgreSQL",
+          "class": "devicon-postgresql-plain",
+          "level": "85"
+        },
+        {
+          "name": "Firebase",
+          "class": "devicon-firebase-plain",
+          "level": "85"
         }
       ]
     }

@@ -4,7 +4,7 @@ import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Experience from "./components/Experience";
+
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
@@ -18,7 +18,6 @@ class App extends Component {
       sharedData: {},
     };
   }
-
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
@@ -41,6 +40,7 @@ class App extends Component {
       .getElementById(pickedLangIconId)
       .setAttribute("filter", "brightness(40%)");
   }
+  
 
   componentDidMount() {
     this.loadSharedData();
@@ -81,6 +81,7 @@ class App extends Component {
 
   render() {
     return (
+
       <div>
         <Header sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 mx-auto text-center language">
@@ -91,7 +92,7 @@ class App extends Component {
                 window.$secondaryLanguageIconId
               )
             }
-            style={{ display: "inline" }}
+            style={{ display: "none" }}
           >
             <span
               className="iconify language-icon mr-5"
@@ -107,7 +108,7 @@ class App extends Component {
                 window.$primaryLanguageIconId
               )
             }
-            style={{ display: "inline" }}
+            style={{ display: "none" }}
           >
             <span
               className="iconify language-icon"
@@ -121,20 +122,20 @@ class App extends Component {
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
         />
+          <Skills
+          sharedSkills={this.state.sharedData.skills}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+
         <Projects
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
+
+
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
+
     );
   }
 }

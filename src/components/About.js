@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import gamingIcon from '@iconify/icons-maki/gaming';
+import codeBlocksOutlineRounded from '@iconify/icons-material-symbols/code-blocks-outline-rounded';
+import gymIcon from '@iconify/icons-iconoir/gym';
 
 class About extends Component {
   render() {
@@ -31,15 +31,15 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={gymIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={reactIcon}
+                    icon={gamingIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={codeBlocksOutlineRounded}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
@@ -72,7 +72,7 @@ class About extends Component {
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
                       height: "auto",
-                      fontSize: "132%",
+                      fontSize: "140%",
                       lineHeight: "200%",
                     }}
                   >
@@ -81,6 +81,8 @@ class About extends Component {
                     <br />
                     <br />
                     {about}
+                    <br />
+                    <br />
                   </div>
                 </div>
               </div>
